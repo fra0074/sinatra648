@@ -1,0 +1,9 @@
+<h1>Yelp! batch #648</h1>
+<ul>
+  <% @restaurants.each do |rest| %>
+    <a href="<%= rest.id %>">
+      <li> <%= rest.name %></li>
+    </a>
+  <% end  %>
+</ul>
+<a href="/new">Create a new restaurant</a>
